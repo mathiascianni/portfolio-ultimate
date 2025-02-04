@@ -5,3 +5,19 @@ export const navLinks = [
     { id: "extras", title: "Extras" },
     { id: "contact", title: "Contact" },
 ]
+
+export const about = [
+    {
+        text: "Soy **Mathias Cianni**, desarrollador frontend con más de un año de experiencia. Me **encanta** diseñar y desarrollar experiencias digitales que sean atractivas y funcionales."
+    },
+    {
+        text: "En 2022, me gradué como desarrollador web y actualmente estoy ampliando mis conocimientos en **inteligencia artificial**. A lo largo de mi carrera, he trabajado en diversos proyectos, desde eCommerce hasta plataformas interactivas, aplicando React, Tailwind y Astro, entre otras."
+    },
+    {
+        text: "Durante mi trayectoria, he participado en proyectos freelance y colaborado con empresas en el desarrollo de soluciones web modernas. Recientemente, trabajé en el diseño, desarrollo y en la estrategia digital de **Arenera Padua**."
+    },
+    {
+        text: "Siempre estoy explorando nuevas tendencias y herramientas para optimizar mi trabajo y mejorar la experiencia del usuario en cada proyecto."
+    },
+
+]
