@@ -21,3 +21,78 @@ export const about = [
     },
 
 ]
+
+export const technologies = [
+    {
+        name: "React",
+        icon: "react"
+    },
+    {
+        name: "Tailwind",
+        icon: "tailwind"
+    },
+    {
+        name: "Astro",
+        icon: "astro"
+    },
+    {
+        name: "Nextjs",
+        icon: "nextjs"
+    },
+    {
+        name: "Motion",
+        icon: "motion"
+    },
+    {
+        name: "Firebase",
+        icon: "firebase"
+    },
+    {
+        name: "MongoDB",
+        icon: "mongodb"
+    },
+    {
+        name: "Git",
+        icon: "git"
+    },
+    {
+        name: "Figma",
+        icon: "figma"
+    },
+    {
+        name: "Nodejs",
+        icon: "nodejs"
+    },
+    {
+        name: "Typescript",
+        icon: "typescript"
+    },
+    {
+        name: "Javascript",
+        icon: "javascript"
+    },
+    {
+        name: "HTML",
+        icon: "html"
+    },
+    {
+        name: "CSS",
+        icon: "css"
+    },
+    {
+        name: "Photoshop",
+        icon: "photoshop"
+    },
+    {
+        name: "Illustrator",
+        icon: "illustrator"
+    },
+    {
+        name: "Express",
+        icon: "express"
+    },
+    {
+        name: "Bootstrap",
+        icon: "bootstrap"
+    }
+]

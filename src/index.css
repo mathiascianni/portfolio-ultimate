@@ -14,4 +14,18 @@
   --spacing-tab: 2rem;
   --spacing-desk: 9.375rem;
   --spacing-desk-xl: 12.5rem;
+
+  --animate-scroll: techScroll 40s linear infinite forwards;
+
+  @keyframes techScroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    /* (direction * count * width + gap * 2) */
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
 }
