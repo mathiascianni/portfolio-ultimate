@@ -1,7 +1,7 @@
 export const navLinks = [
     { id: "home", title: "Home" },
-    { id: "about", title: "About" },
     { id: "projects", title: "Projects" },
+    { id: "about", title: "About" },
     { id: "extras", title: "Extras" },
     { id: "contact", title: "Contact" },
 ]
@@ -95,4 +95,40 @@ export const technologies = [
         name: "Bootstrap",
         icon: "bootstrap"
     }
+]
+
+export const contact = [
+    {
+        name: "Email",
+        icon: "mail",
+        link: "mailto:mncianni@hotmail.com",
+        text: "mncianni@hotmail.com"
+    },
+    {
+        name: "Whatsapp",
+        icon: "whatsapp",
+        link: "https://wa.me/541137008113",
+        text: "+54 11 3700-8113"
+    }
+]
+
+export const socials = [
+    {
+        name: "Github",
+        icon: "github",
+        link: "https://github.com/mathiascianni",
+        text: "mathiascianni"
+    },
+    {
+        name: "Instagram",
+        icon: "instagram",
+        link: "https://www.instagram.com/matnadc/",
+        text: "@matnadc"
+    },
+    {
+        name: "Linkedin",
+        icon: "linkedin",
+        link: "https://www.linkedin.com/in/mathiascianni/",
+        text: "mathiascianni"
+    },
 ]

@@ -25,9 +25,9 @@ export const projects = [
         link: "https://arenerapadua.com/"
     },
     {
-        id: "arenera-padua",
-        title: "Arenera Padua",
-        subtitle: "Desarrollo de landing page informativa con experiencia de usuario y desarrollo de branding",
+        id: "the-refill-stop",
+        title: "The Refill Stop",
+        subtitle: "Desarrollo de Ecommerce completo priorizando simplicidad y accesibilidad",
         tags: [
             "Frontend",
             "Brand",
@@ -45,8 +45,8 @@ export const projects = [
             "Swiper",
             "Figma"
         ],
-        miniature: "/media/projects/arenera-padua/miniature.jpg",
+        miniature: "/media/projects/the-refill-stop/miniature.jpg",
         date: "2024",
-        link: "https://arenerapadua.com/"
+        link: "https://therefillstop.com/"
     }   
 ]

@@ -11,12 +11,14 @@ import Separator from "../assets/separator.svg?react"
 const MainContent = () => {
   return (
     <>
-        <Header />
-        <Separator className="w-full" />
-        <Work />
-        <Separator className="w-full -scale-x-100" />
-        <About />
-        <Techs />
+      <Header />
+      <Separator className="w-full" />
+      <Work />
+      <div className="relative">
+        <Separator className="-top-px absolute w-full -scale-x-100" />
+      </div>
+      <About />
+      <Techs />
     </>
   )
 }
