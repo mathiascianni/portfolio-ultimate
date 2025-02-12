@@ -12,22 +12,52 @@ import { mobileMenuContainer, mobileMenuItems } from "../constants/animations";
 import Logo from "../assets/matna-logo.svg?react";
 import Menu from "../assets/menu.svg?react";
 import Close from "../assets/close.svg?react";
-
+import { Link, useNavigate } from "react-router";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
+
+    const handleHome = () => {
+        setIsOpen(false);
+        redirect("/");
+    }
+
+    const handleAbout = () => {
+        redirect("/");
+        setIsOpen(false);
+        // document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+    }
 
     return (
-        <motion.nav initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }} className="top-0 left-0 z-10 fixed md:px-tab lg:px-desk 2xl:px-desk-xl p-2 w-full">
-            <div className="flex justify-between items-center border-primary bg-white/[0.03] backdrop-blur-sm p-4 border-b rounded-t-md w-full">
-                <a href="#home"><Logo className="text-primary" /></a>
+        <motion.nav initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }} className="top-0 left-0 z-10 fixed p-2 md:px-tab lg:px-desk 2xl:px-desk-xl w-full">
+            <div className="flex justify-between items-center bg-white/[0.03] backdrop-blur-sm p-4 border-primary border-b rounded-t-md w-full">
+                <Link to="/"><Logo className="text-primary-dark" /></Link>
                 <button
-                    className="block lg:hidden"
+                    className="lg:hidden block"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <Menu className="text-primary" />
                 </button>
+                <div className="hidden lg:block">
+                    <ul className="flex gap-2">
+                        {
+                            navLinks.map((item, index) => (
+                                <motion.li
+                                    className="text-primary-dark"
+                                    key={index}
+                                    variants={mobileMenuItems}
+                                    onClick={() => setIsOpen(!isOpen)}
+                                >
+                                    <Link to={item.path} className="">{item.title}</Link>
+                                </motion.li>
+                            ))
+                        }
+                    </ul>
+                </div>
             </div>
+
+
             <motion.div
                 animate={isOpen ? "open" : "closed"}
                 variants={mobileMenuContainer}
@@ -53,17 +83,21 @@ const Navbar = () => {
                         }
                     }}
                     className="top-4 right-6 absolute"
-                    onClick={() => setIsOpen(!isOpen)}><Close  /></motion.button>
-                <ul>
-                    {navLinks.map(({ id, title }) => (
-                        <motion.li
-                            key={id}
-                            variants={mobileMenuItems}
-                            className="font-bold text-2xl text-dark"
-                        >
-                            <a href={`#${id}`} onClick={() => setIsOpen(!isOpen)}>{title}</a>
-                        </motion.li>
-                    ))}
+                    onClick={() => setIsOpen(!isOpen)}><Close />
+                </motion.button>
+                <ul className="flex flex-col gap-2 uppercase">
+                    {
+                        navLinks.map((item, index) => (
+                            <motion.li
+                                className="font-bold text-dark text-2xl"
+                                key={index}
+                                variants={mobileMenuItems}
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
+                                <Link to={item.path}>{item.title}</Link>
+                            </motion.li>
+                        ))
+                    }
                 </ul>
             </motion.div>
         </motion.nav>

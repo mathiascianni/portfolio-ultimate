@@ -3,8 +3,8 @@ export const mobileMenuContainer = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.5,
-            staggerChildren: 0.3,
+            duration: 0.3,
+            staggerChildren: 0.2,
             delayChildren: .3,
 
         }
@@ -13,7 +13,7 @@ export const mobileMenuContainer = {
         opacity: 0,
         y: 200,
         transition: {
-            duration: 0.5,
+            duration: 0.3,
             when: "afterChildren"
         }
     }
@@ -24,7 +24,7 @@ export const mobileMenuItems = {
         opacity: 1,
         x: 0,
         transition: {
-            duration: 0.3,
+            duration: 0.2,
             ease: "easeInOut"
         }
     },
@@ -32,7 +32,7 @@ export const mobileMenuItems = {
         opacity: 0,
         x: -50,
         transition: {
-            duration: 0.3
+            duration: 0.2
         }
     }
 }
@@ -68,6 +68,33 @@ export const fadeInItem = {
         y: 0,
         transition: {
             duration: 0.5,
+        }
+    }
+}
+
+export const imageAnimation = {
+    initial: {
+        opacity: 0,
+        y: 50,
+        rotate: 0,
+        transition: {
+            duration: 0.3,
+        }
+    },
+    animateR: {
+        opacity: 1,
+        y: 0,
+        rotate: 10,
+        transition: {
+            duration: 0.3,
+        }
+    },
+    animateL: {
+        opacity: 1,
+        y: 0,
+        rotate: -10,
+        transition: {
+            duration: 0.3,
         }
     }
 }

@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar"
-import Contact from "../components/contact-section/Contact"
+import Contact from "../components/home-view/contact-section/Contact"
 const Layout = ({ children }) => {
   return (
     <>

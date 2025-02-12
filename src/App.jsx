@@ -1,10 +1,9 @@
-import Layout from "./layout/Layout"
-import MainContent from "./views/MainContent"
+import MainRoutes from "./routes/MainRoutes"
 const App = () => {
     return (
-        <Layout>
-            <MainContent />
-        </Layout>
+        <>
+            <MainRoutes />
+        </>
     )
 }
 

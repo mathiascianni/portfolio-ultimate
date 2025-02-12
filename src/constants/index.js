@@ -1,20 +1,15 @@
 export const navLinks = [
-    { id: "home", title: "Home" },
-    { id: "projects", title: "Projects" },
-    { id: "about", title: "About" },
-    { id: "extras", title: "Extras" },
-    { id: "contact", title: "Contact" },
+    { path: "/", title: "Home" },
+    { path: "/works", title: "Projects" },
+    { path: "/extras", title: "Extras" }
 ]
 
 export const about = [
     {
-        text: "Soy **Mathias Cianni**, desarrollador frontend con más de un año de experiencia. Me **encanta** diseñar y desarrollar experiencias digitales que sean atractivas y funcionales."
+        text: "¡Buenas! Soy **Mathias Cianni** diseñador y desarrollador frontend con más de un año de experiencia. Me especializo en crear sitios web accesibles y centrados en el usuario, ayudando a que cada proyecto llegue a nuevas alturas. Actualmente, desde **Buenos Aires, Argentina**, trabajo como freelance, llevando a cabo desarrollos que buscan siempre la mejor experiencia posible."
     },
     {
         text: "En 2022, me gradué como desarrollador web y actualmente estoy ampliando mis conocimientos en **inteligencia artificial**. A lo largo de mi carrera, he trabajado en diversos proyectos, desde eCommerce hasta plataformas interactivas, aplicando React, Tailwind y Astro, entre otras."
-    },
-    {
-        text: "Durante mi trayectoria, he participado en proyectos freelance y colaborado con empresas en el desarrollo de soluciones web modernas. Recientemente, trabajé en el diseño, desarrollo y en la estrategia digital de **Arenera Padua**."
     },
     {
         text: "Siempre estoy explorando nuevas tendencias y herramientas para optimizar mi trabajo y mejorar la experiencia del usuario en cada proyecto."
