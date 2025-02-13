@@ -660,7 +660,7 @@ export const projects = [
         ],
         miniature: "/media/projects/pokedb/miniature.jpg",
         date: "2023",
-        link: "https://inko-remake.vercel.app/",
+        link: "https://pokedb-self.vercel.app/",
         type: "Multipage",
         details: [
             {
@@ -685,42 +685,42 @@ export const projects = [
                 type: "section",
                 data: {
                     title: "Objetivos del proyecto",
-                    text: "El objetivo principal del proyecto era aprender a consumir APIs, utilizar buenas prácticas de React, aprender a utilizar el hook useContext y estilizar de manera moderna con Tailwind."
+                    text: "El objetivo principal del proyecto era **aprender** a consumir APIs, utilizar **buenas prácticas** de React, aprender a utilizar el hook useContext y estilizar de manera moderna con Tailwind."
                 }
             },
             {
                 type: "image",
                 data: {
                     src: "/media/projects/pokedb/01.jpg",
-                    alt: "Vista de varias secciones de la homepage en mobile",
+                    alt: "Vista de la home y las estadísticas de los pokemons en mobile",
                 }
             },
             {
                 type: "image",
                 data: {
                     src: "/media/projects/pokedb/02.jpg",
-                    alt: "Vista del detalle de los productos individuales en mobile",
+                    alt: "Vista de la home en desktop",
                 }
             },
             {
                 type: "section",
                 data: {
                     title: "Observación",
-                    text: "Noté que hacer el proyecto consumiendo la PokeAPI es muy común y quería darle mi toque al consumir dicha API, por lo que no sólo se puede traer información de los Pokemons y ver algunos detalles, sino que además he armado un sistema que permite ver las evoluciones de los Pokemons con sus condiciones, ver la tabla de tipos de los Pokemons y ver las debilidades y defensas de los Pokemons y las estadísticas de los mismos usando los cálculos de los juegos originales."
+                    text: "Noté que hacer el proyecto consumiendo la PokeAPI es muy común y quería darle mi toque al consumir dicha API, por lo que no sólo se puede traer información de los Pokemons y ver algunos detalles, sino que además he armado un sistema que permite  ver las **evoluciones** con sus condiciones, ver la **tabla de tipos** y ver las **debilidades, defensas y estadísticas** de los Pokemon usando los cálculos de los juegos originales."
                 }
             },
             {
                 type: "image",
                 data: {
                     src: "/media/projects/pokedb/03.jpg",
-                    alt: "Vista de la landing alternativa 1 en mobile",
+                    alt: "Vista de las estadisticas de los pokemons en desktop",
                 }
             },
             {
                 type: "section",
                 data: {
                     title: "Escalabilidad",
-                    text: "Si se quisiera expandir el proyecto, se podría implementar un sistema para ver los movimientos que aprende cada pokemon en sus respectivos niveles, descripciones de qué hace cada habilidad, revisar modelos 3D de los Pokemons, entre otras cosas. También sería posible armar un micro-juego donde se puedan realizar combates entre los Pokemons."
+                    text: "Si se quisiera expandir el proyecto, se podría implementar un sistema para ver los movimientos que aprende cada pokemon en sus respectivos niveles, descripciones de qué hace cada habilidad, revisar modelos 3D de los Pokemons, entre otras cosas. También sería posible armar un **micro-juego** donde se puedan realizar combates entre los Pokemons."
                 }
             },
             {
