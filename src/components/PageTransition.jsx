@@ -4,11 +4,7 @@ import { motion } from "motion/react"
 //Icons
 import Logo from "../assets/matna-logo.svg?react"
 
-// Hooks
-import useIsMobile from "../hooks/useIsMobile"
-
 const PageTransition = ({ children }) => {
-    const isMobile = useIsMobile()
     return (
         <>
             {children}
@@ -20,10 +16,10 @@ const PageTransition = ({ children }) => {
                 transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             />
             <motion.div
-                initial={{ left: "50%", opacity: 1 }}
-                animate={{ left: "0%", opacity: 0 }}
-                exit={{ left: "50%", opacity: 1 }}
-                transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                initial={{ clipPath: "inset(0% 0% 0% 0%)", left: "50%", opacity: 1 }}
+                animate={{ clipPath: "inset(0% 100% 0% 0%)", left: "0%", opacity: 0 }}
+                exit={{ clipPath: "inset(0% 0% 0% 0%)", left: "50%", opacity: 1 }}
+                transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                 className="hidden lg:block top-1/2 left-1/2 z-[60] fixed bg-primary-dark p-8 rounded-sm -translate-x-1/2 -translate-y-1/2">
                 <Logo className="w-24 h-24 text-primary" />
             </motion.div>

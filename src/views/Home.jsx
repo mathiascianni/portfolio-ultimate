@@ -20,9 +20,6 @@ const MainContent = () => {
       <Header />
       <main>
         <Work />
-        <div className="md:px-tab lg:px-desk 2xl:px-desk-xl">
-          <div className="bg-primary w-full h-px"></div>
-        </div>
         <About />
         <Techs />
       </main>

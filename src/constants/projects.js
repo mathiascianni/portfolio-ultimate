@@ -110,7 +110,9 @@ export const projects = [
             "Tailwind",
             "Motion",
             "Swiper",
-            "Figma"
+            "Figma",
+            "React Router",
+            "Github"
         ],
         miniature: "/media/projects/arenera-padua/miniature.jpg",
         date: "2024",
@@ -567,7 +569,8 @@ export const projects = [
             "React",
             "Tailwind",
             "Figma",
-            "Github"
+            "Github",
+            "React Router"
         ],
         miniature: "/media/projects/inko/miniature.jpg",
         date: "2023",
@@ -656,7 +659,8 @@ export const projects = [
             "JavaScript",
             "React",
             "Tailwind",
-            "Github"
+            "Github",
+            "React Router"
         ],
         miniature: "/media/projects/pokedb/miniature.jpg",
         date: "2023",

@@ -1,6 +1,6 @@
 //Hooks
 import { useState, useEffect } from "react";
-import { useParams } from "react-router"
+import { useParams, useSearchParams } from "react-router"
 
 //Constants
 import { projects } from "../constants/projects";
@@ -35,7 +35,6 @@ const Work = () => {
       setProject(project);
     }
   }, [params.id]);
-
 
   return (
     <Layout>
@@ -74,8 +73,7 @@ const Work = () => {
             <div className="flex flex-wrap gap-2 mb-6">
               {
                 project.techs && project.techs.map((tech, index) => (
-                  // TODO: cada uno te manda a /work con el filtro añadido
-                  <Badge key={index}>#{tech}</Badge>
+                  <Badge key={index} isLink={true} tech={tech}>#{tech}</Badge>
                 ))
               }
             </div>
