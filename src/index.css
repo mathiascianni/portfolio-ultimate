@@ -22,7 +22,6 @@
       transform: translateX(0);
     }
 
-    /* (direction * count * width + gap * 2) */
     100% {
       transform: translateX(-50%);
     }
