@@ -1,9 +1,18 @@
+//Hooks
+import { useEffect } from "react"
+
 //Layout
 import Layout from "../layout/Layout"
 
+//Components
 import { Link } from "react-router"
 
 const NotFound = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <Layout>
             <main className="flex flex-col justify-center px-mob md:px-tab lg:px-desk 2xl:px-desk-xl min-h-screen">

@@ -26,8 +26,8 @@ const Works = () => {
       <Helmet >
         <title>Mathias Cianni — Proyectos</title>
       </Helmet>
-      <main className="px-mob md:px-tab lg:px-desk 2xl:px-desk-xl py-16 lg:py-32 min-h-screen">
-        <h1 className="font-title font-bold text-primary text-2xl uppercase">Desarrollado con pasión y detalle</h1>
+      <main className="mb-16 lg:mb-32 px-mob md:px-tab lg:px-desk 2xl:px-desk-xl pt-16 lg:pt-24 min-h-screen">
+        <h1 className="pt-16 pb-4 font-title font-bold text-primary text-2xl lg:text-4xl uppercase">Desarrollado con pasión y detalle</h1>
         <motion.section 
         variants={fadeInContainer}
         initial="hidden"

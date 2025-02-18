@@ -7,6 +7,7 @@ import About from "../components/home-view/about-section/About"
 import Techs from "../components/home-view/techs-section/Techs"
 import Work from "../components/home-view/work-section/Work"
 
+
 //Components
 import { Helmet } from "react-helmet"
 

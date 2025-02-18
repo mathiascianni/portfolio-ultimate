@@ -33,3 +33,17 @@
 .clip-styled-bg {
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
+
+.curve .animSvg, .curve .animBg {
+  width: 100vw;
+  height: calc(100vh + 600px);
+  top: -300px;
+  left: 0;
+  position: fixed;
+  pointer-events: none;
+  z-index: 20;
+}
+
+.animBg{
+  background-color: var(--color-dark);
+}

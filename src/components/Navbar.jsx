@@ -18,7 +18,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <motion.nav initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }} className="top-0 left-0 z-10 fixed p-2 md:px-tab lg:px-desk 2xl:px-desk-xl w-full">
+        <motion.nav initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: .5 }} className="top-0 left-0 z-10 fixed p-2 md:px-tab lg:px-desk 2xl:px-desk-xl w-full">
             <div className="flex justify-between items-center bg-white/[0.03] backdrop-blur-sm p-4 border-primary border-b rounded-t-md w-full">
                 <NavLink to="/"><Logo className="text-primary-dark" /></NavLink>
                 <button

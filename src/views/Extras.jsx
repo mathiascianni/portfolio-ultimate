@@ -1,7 +1,15 @@
+//Hooks
+import { useEffect } from "react"
+
 //Layout
 import Layout from "../layout/Layout"
 
 const Extras = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <Layout>
         <main className="">
